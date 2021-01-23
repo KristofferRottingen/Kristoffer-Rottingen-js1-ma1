@@ -92,9 +92,7 @@ function crateCats(cats) {
     // console.log(finalHtmlAge);
 
     return finalHtmlName + finalHtmlAge;
-    // if (listAge !== undefined) {
-    //     console.log("Age unknown");
-    // }
+    
 };
 
 const htmlInWeb = crateCats(cats);
