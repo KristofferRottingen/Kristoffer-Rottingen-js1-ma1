@@ -32,7 +32,7 @@ for (let i = 0; i < paragraphs.length; i++) {
 
 
 // question 6 
-const resultsContainer = document.querySelector(".result");
+const resultsContainer = document.querySelector(".results");
 
 resultsContainer.innerHTML = "<p>New paragraph</p>";
 
@@ -55,6 +55,53 @@ const cats = [
 ];
 
 
-function name(list) {
+function catsNames(list) {
     
+    for (let i = 0; i < list.length; i++) {
+        console.log(list[i].name)
+    }
 }
+
+catsNames(cats);
+
+// question 8
+
+function crateCats(cats) {
+
+    let listNames = "";
+
+    let listAge = "";
+
+    for (let i = 0; i < cats.length; i++) {
+        
+        listNames = listNames + "<h5>" + cats[i].name + "</h5>"; 
+        // console.log(listNames);
+        
+        listAge = listAge + "<p>" + cats[i].age + "<p>"; 
+        // console.log(listAge);
+
+        if (!cats[i].age) {
+            listAge = "Age unknown";
+        }
+
+    }
+
+    const finalHtmlName = "<h5>" + listNames + "</h5>";
+    // console.log(finalHtmlName);
+
+    const finalHtmlAge = "<p>" + listAge + "</p>";
+    // console.log(finalHtmlAge);
+
+    return finalHtmlName + finalHtmlAge;
+    // if (listAge !== undefined) {
+    //     console.log("Age unknown");
+    // }
+};
+
+const htmlInWeb = crateCats(cats);
+
+console.log(htmlInWeb);
+
+const catContainer = document.querySelector(".cat-container");
+
+catContainer.innerHTML = htmlInWeb;
