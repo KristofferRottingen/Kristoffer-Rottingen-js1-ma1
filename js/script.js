@@ -65,7 +65,6 @@ function catsNames(list) {
 catsNames(cats);
 
 // question 8
-
 function crateCats(cats) {
 
     let listNames = "";
