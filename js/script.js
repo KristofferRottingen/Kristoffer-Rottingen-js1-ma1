@@ -40,5 +40,21 @@ resultsContainer.style.backgroundColor = "yellow";
 
 
 // question 7
+const cats = [
+    {
+        name: "Blob",
+        age: 10
+    },
+    {
+        name: "Harold",
+    },
+    {
+        name: "Blurt",
+        age: 21
+    }
+];
 
 
+function name(list) {
+    
+}
